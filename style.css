@@ -1,0 +1,125 @@
+/* Базовые настройки для всего документа */
+body {
+    background-color: #FFF0F5; /* Нежно-розовый фон (Lavender Blush) */
+    color: #333333; /* Тёмно-серый текст для читаемости */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Округлый, современный шрифт */
+    line-height: 1.6; /* Межстрочный интервал для удобства чтения */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем весь контент */
+}
+
+/* Ограничиваем ширину текста до 700px */
+body > * {
+    max-width: 700px;
+    width: 100%;
+}
+
+/* Главный заголовок (h1) */
+h1 {
+    color: #D81B60; /* Ярко-розовый, как бантик Hello Kitty */
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(216, 27, 96, 0.2); /* Легкая тень для объема */
+}
+
+/* Подзаголовок (h2) */
+h2 {
+    color: #AD1457; /* Более насыщенный розовый */
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px dashed #F8BBD0; /* Пунктирная линия снизу */
+    padding-bottom: 5px;
+}
+
+/* Обычный текст (параграфы) */
+p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: justify; /* Выравнивание по ширине */
+}
+
+/* Выделение главного (strong) */
+strong {
+    color: #D81B60; /* Акцентный розовый */
+    font-weight: bold;
+}
+
+/* Цитаты (blockquote) */
+blockquote {
+    background-color: #FFFFFF; /* Белый фон для цитаты */
+    border-left: 5px solid #D81B60; /* Розовая полоса слева */
+    margin: 20px 0;
+    padding: 15px 20px;
+    font-style: italic;
+    font-size: 18px;
+    color: #555555;
+    border-radius: 0 10px 10px 0; /* Скругленные углы */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05); /* Легкая тень */
+}
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Убираем двойные рамки */
+    margin: 20px 0;
+    background-color: #FFFFFF;
+    border-radius: 10px; /* Скругленные углы */
+    overflow: hidden; /* Чтобы рамки не вылезали за скругления */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Ячейки таблицы */
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #F8BBD0; /* Светло-розовая линия между строками */
+    font-size: 16px;
+}
+
+/* Первая колонка таблицы (заголовки) */
+td:first-child {
+    font-weight: bold;
+    color: #AD1457;
+    width: 40%; /* Первая колонка чуть уже */
+}
+
+/* Последняя строка без нижней границы */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Адаптивность для телефонов */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    td {
+        padding: 10px;
+    }
+}
+img {
+    width: 250px !important;
+    height: auto;
+    border-radius: 15px; /* Скругляем углы */
+}
